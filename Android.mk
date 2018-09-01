@@ -1,5 +1,5 @@
 RIL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_RIL_VARIANT), aosp)
+ifneq ($(TARGET_RIL_VARIANT), caf)
 include $(call all-makefiles-under,$(RIL_PATH))
 endif
